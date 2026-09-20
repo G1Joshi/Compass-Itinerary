@@ -1,17 +1,32 @@
-# compass_itinerary
+# Compass Itinerary 🧭
 
-Travel Itinerary and Vacation Planning
+A production-grade travel itinerary and vacation planning application engineered strictly in accordance with [Google's Official Flutter App Architecture](https://docs.flutter.dev/app-architecture) and its 10 architectural subpages.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🏛️ Architectural Highlights
 
-A few resources to get you started if this is your first Flutter project:
+- **UI Layer (MVVM)**: Pure `ChangeNotifier` and `ListenableBuilder` reactive bindings with zero third-party state managers.
+- **Command Pattern**: `Command0<T>` and `Command1<T, A>` encapsulate async actions, prevent button re-entrancy / double-taps, and bind loading & error states natively.
+- **Sealed Result Pattern**: `Result<T>` (`Ok<T>` and `Error<T>`) eliminates unhandled runtime exceptions and integrates with Dart 3 exhaustive pattern matching.
+- **Single Source of Truth (SSOT) & Optimistic Updates**: Repositories cache data, update locally before network calls, and automatically roll back on simulated errors.
+- **Testing with Fakes**: Fully isolated, fast unit and widget test suite using in-memory `FakeRepositories` instead of heavy mocking frameworks.
+- **Dependency Injection**: Declarative top-level `MultiProvider` wiring Services ➔ Repositories ➔ Use Cases ➔ ViewModels ➔ Widgets.
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🚀 Running the App
+
+```bash
+# Get dependencies
+flutter pub get
+
+# Run static analysis
+flutter analyze
+
+# Run the 30-test automated suite
+flutter test
+
+# Run in Google Chrome
+flutter run -d chrome
+```
