@@ -30,3 +30,9 @@ flutter test
 # Run in Google Chrome
 flutter run -d chrome
 ```
+
+## 📸 Screenshots
+
+|                                                                                                             |                                                                                                             |                                                                                                             |                                                                                                             |
+| ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| ![](https://raw.githubusercontent.com/G1Joshi/Assets/refs/heads/main/ScreenShots/compass_itinerary/SS1.png) | ![](https://raw.githubusercontent.com/G1Joshi/Assets/refs/heads/main/ScreenShots/compass_itinerary/SS2.png) | ![](https://raw.githubusercontent.com/G1Joshi/Assets/refs/heads/main/ScreenShots/compass_itinerary/SS3.png) | ![](https://raw.githubusercontent.com/G1Joshi/Assets/refs/heads/main/ScreenShots/compass_itinerary/SS4.png) |
