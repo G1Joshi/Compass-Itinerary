@@ -1,6 +1,6 @@
 {
-    "name": "compass_itinerary",
-    "short_name": "compass_itinerary",
+    "name": "Compass Itinerary",
+    "short_name": "Compass Itinerary",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
